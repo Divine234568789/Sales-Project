@@ -1,0 +1,639 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 20px;
+  background-color: gray;
+}
+::-webkit-scrollbar-track {
+  width: 8px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-corner {
+  width: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #252525;
+}
+header {
+  position: fixed;
+  z-index: 50;
+}
+
+nav {
+  width: 99%;
+  background-color: grey;
+  border-radius: 10px;
+  height: 6vh;
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+  margin: 15px;
+}
+
+.dm {
+  padding: 5px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+body {
+  background-color: #ffffff;
+  color: black;
+  transition: 0.3s, color 0.3s;
+}
+
+body.dm {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+button.dm:hover {
+  background-color: #bbb;
+}
+
+.lm {
+  padding: 5px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  /* background-color: #333; */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.name {
+  color: black;
+  font-style: oblique;
+  font-size: 20px;
+  margin-left: 5rem;
+}
+
+.links {
+  display: flex;
+  gap: 9.5rem;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.content {
+  background-color: grey;
+  border-radius: 12px;
+  margin: 10px;
+  padding-left: 3rem;
+  width: 194vh;
+  padding-top: 5rem;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.words {
+  font-size: 3rem;
+}
+
+#hs {
+  color: white;
+  font-size: 7rem;
+}
+
+#HDP {
+  position: relative;
+  right: 45rem;
+}
+
+#btn {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 8rem;
+  width: 5rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn:active {
+  transform: scale(0.8);
+}
+
+.Mcontent {
+  display: flex;
+  gap: 1rem;
+}
+
+.Mcontent2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.content2 {
+  background-color: black;
+  border-radius: 12px;
+  margin: 10px;
+  padding-top: 5rem;
+  height: 50.5vh;
+  width: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.words2 {
+  color: white;
+}
+
+#es {
+  color: grey;
+  font-size: 1rem;
+}
+
+#ERP {
+  position: relative;
+  right: 10rem;
+  bottom: 1rem;
+}
+
+#btn2 {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -18rem;
+  width: 5rem;
+  left: 1rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn2:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn2:active {
+  transform: scale(0.8);
+}
+
+.content3 {
+  background-color: yellow;
+  border-radius: 12px;
+  margin: 10px;
+  padding-top: 5rem;
+  height: 50.5vh;
+  width: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+#on {
+  color: grey;
+  font-size: 2rem;
+}
+
+#watch {
+  position: relative;
+  right: 3rem;
+}
+
+#btn3 {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: absolute;
+  width: 5rem;
+  left: 20.5rem;
+  bottom: -18rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn3:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn3:active {
+  transform: scale(0.8);
+}
+
+.content4 {
+  background-color: rgb(218, 12, 12);
+  border-radius: 12px;
+  margin: 10px;
+  padding-top: 5rem;
+  height: 50.5vh;
+  width: 93.5vh;
+  display: flex;
+  align-items: center;
+}
+
+#lp {
+  color: rgb(238, 71, 71);
+  font-size: 2rem;
+}
+
+#btn4 {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: absolute;
+  width: 5rem;
+  right: 3rem;
+  bottom: -18rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn4:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn4:active {
+  transform: scale(0.8);
+}
+
+.content5 {
+  background-color: rgb(189, 184, 184);
+  border-radius: 12px;
+  margin: 10px;
+  padding-top: 5rem;
+  height: 50.5vh;
+  width: 84vh;
+  display: flex;
+  align-items: center;
+}
+
+#ps5 {
+  position: relative;
+  right: 5rem;
+}
+
+#ps {
+  font-size: 2rem;
+  color: white;
+}
+
+#btn5 {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: absolute;
+  width: 5rem;
+  left: 2rem;
+  bottom: -40rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn5:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn5:active {
+  transform: scale(0.8);
+}
+
+.content6 {
+  background-color: rgb(204, 18, 204);
+  border-radius: 12px;
+  margin: 10px;
+  padding-top: 5rem;
+  height: 50.5vh;
+  width: 50vh;
+  display: flex;
+}
+
+#vr {
+  position: relative;
+  right: 4.15rem;
+  top: 4.1rem;
+}
+
+.vr1 {
+  border-radius: 12px;
+}
+
+.words6 {
+  font-size: 1rem;
+}
+
+#vr2 {
+  color: white;
+}
+
+#btn6 {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: relative;
+  width: 5rem;
+  left: -25rem;
+  bottom: -12rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn6:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn6:active {
+  transform: scale(0.8);
+}
+
+.content7 {
+  background-color: rgb(63, 63, 247);
+  border-radius: 12px;
+  margin: 10px;
+  padding-top: 5rem;
+  height: 50.5vh;
+  width: 49.5vh;
+  display: flex;
+  align-items: center;
+}
+
+#spk {
+  color: white;
+  font-size: 2rem;
+}
+
+#spkr {
+  position: absolute;
+  right: 2rem;
+  bottom: -42rem;
+}
+
+#btn7 {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: relative;
+  width: 5rem;
+  bottom: -5rem;
+  left: -8rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn7:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn7:active {
+  transform: scale(0.8);
+}
+
+.content8 {
+  background-color: red;
+  border-radius: 12px;
+  margin: 10px;
+  margin-top: 15vh;
+  padding-left: 3rem;
+  width: 194vh;
+  padding-top: 5rem;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.words8 {
+  font-size: 3rem;
+  color: white;
+}
+
+.words85 {
+  padding-left: 10vh;
+  color: white;
+}
+
+#rHDP {
+  position: relative;
+  bottom: 5rem;
+}
+
+#btn8 {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+  position: relative;
+  width: 5rem;
+  bottom: -6rem;
+  left: 8rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+#btn8:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+
+#btn8:active {
+  transform: scale(0.8);
+}
+
+.subheading {
+  margin-top: 5vh;
+  margin-left: 80vh;
+}
+
+.sh {
+  display: flex;
+  align-content: center;
+  margin-left: 40px;
+}
+
+.sections {
+  margin-top: 10vh;
+  margin-left: 15vh;
+  display: flex;
+}
+
+.bhdpw {
+  background-color: rgb(216, 210, 210);
+  height: 29vh;
+  width: 30vh;
+  border-radius: 10px;
+}
+
+.bhdpw2 {
+  margin-left: 1vh;
+}
+
+.sony {
+  background-color: rgb(216, 210, 210);
+  height: 29vh;
+  width: 30vh;
+  border-radius: 10px;
+}
+
+.sony2 {
+  margin-left: 10vh;
+}
+
+.whdp {
+  background-color: rgb(216, 210, 210);
+  height: 29vh;
+  width: 30vh;
+  border-radius: 10px;
+}
+
+.whdp2 {
+  margin-left: 10vh;
+}
+
+.laptop2 {
+  background-color: rgb(216, 210, 210);
+  height: 29vh;
+  width: 45vh;
+  border-radius: 10px;
+  position: relative;
+}
+
+.laptop3 {
+  margin-left: 10vh;
+}
+
+.sections2 {
+  margin-top: 10vh;
+  margin-left: 16vh;
+  display: flex;
+}
+
+.bhdp {
+  background-color: rgb(216, 210, 210);
+  height: 29vh;
+  width: 30vh;
+  border-radius: 10px;
+}
+
+.bhdp2 {
+  position: relative;
+  left: 1.5rem;
+}
+
+.rhdp {
+  background-color: rgb(216, 210, 210);
+  height: 30vh;
+  width: 30vh;
+  border-radius: 10px;
+}
+
+.rhdp2 {
+  margin-left: 10vh;
+}
+
+.earbuds {
+  background-color: rgb(216, 210, 210);
+  height: 30vh;
+  width: 30vh;
+  border-radius: 10px;
+}
+
+.earbuds2 {
+  margin-left: 10vh;
+}
+
+.smartwatch {
+  background-color: rgb(216, 210, 210);
+  height: 29vh;
+  width: 45vh;
+  border-radius: 10px;
+  position: relative;
+}
+
+.smartwatch2 {
+  margin-left: 10vh;
+}
+
+.smartwatch3 {
+  position: relative;
+  left: 3rem;
+}
+
+#contact {
+  color: red;
+  margin-top: 2rem;
+  margin-left: 30rem;
+  display: flex;
+}
+
+.cm {
+  color: black;
+  margin-left: 3rem;
+}
+
+.cme2 {
+  margin-left: 1rem;
+}
+
+.cme {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+
+.cme:hover {
+  color: red;
+  background-color: white;
+  transition: 0.3s;
+}
